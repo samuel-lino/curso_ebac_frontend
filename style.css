@@ -23,6 +23,7 @@ form input{
 }
 .principal h1{
     text-align: center;
+    
 }
 .submit{
     background-color: green;
@@ -38,10 +39,10 @@ button{
 }
 .botoes{
     height: 4vh;
-    width: 30vh;
+    width: 25vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
 }
 .form{
