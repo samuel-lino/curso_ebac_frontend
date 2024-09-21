@@ -41,6 +41,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .articles article{
@@ -51,7 +52,7 @@
 
 article img{
     width: 30vw;
-    height: 20vh;
+    height: 30vh;
 }
 section a{
     text-decoration: none;
@@ -64,6 +65,10 @@ section a:hover{
 section h2{
     margin-left: 1vw;
     margin-bottom: 1vh;
+    font-size: 20pt;
+}
+section h3{
+    font-size: 14pt;
 }
 
 #esporte{
