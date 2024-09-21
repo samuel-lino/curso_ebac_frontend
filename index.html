@@ -4,34 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <style>
-        form input{
-            margin-bottom: 5px;
-            text-align: center;
-        }
-        div{
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-        }
-        
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    <div>
+    <div class="principal">
         <form>
             <h1>Formulario de cadastro</h1>
-            <label for="user">Usuário:</label>
-            <input type="text" id="user" placeholder="Usuário"/>
-            <br/>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" placeholder="E-mail"/>
-            <br/>
-            <label for="password">Senha:</label>
-            <input type="password" id="password" placeholder="Senha"/>
-            <br/>
-            <button type="submit">Cadastrar</button>
+            <div class="form">
+                <label for="user">Usuário:</label>
+                <input type="text" id="user" placeholder="Usuário"/>
+                <br/>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="E-mail"/>
+                <br/>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" placeholder="Senha"/>
+                <br/>
+                <div class="botoes">
+                    <button type="submit" class="submit">Cadastrar</button>
+                    <button type="reset" class="reset">Apagar</button>
+                </div>
+            </div>
         </form>
     </div>
 </body>
