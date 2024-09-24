@@ -1,117 +1,49 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.cabecalho li{
-    display: inline-block;
-    margin-left: 10px;
+body{
+    background-color: aquamarine;
 }
-
-.cabecalho a{
-    text-decoration: none;
-    color: green;
-}
-
-.cabecalho header{
+section{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px;
+    justify-content: center;
+    margin: 16px 0;
+    text-align: center;
 }
 
-.cabecalho{
-    width: 100vw;
-    background-color: #363434;
-}
-
-.cabecalho h1{
-    color: white;
-}
-
-.container{
-    width: 100vw;
-    margin-top: 2vh;
-}
-
-
-.articles{
-    width: 100vw;
+form{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+input, button{
+    width: 350px;
+    margin: 4px 0;
+    height: 25px;
 }
 
-.articles article{
-    width: 30vw;
-    margin: 0 auto;
-    margin-bottom: 1vh;
-}
-
-article img{
-    width: 30vw;
-    height: 30vh;
-}
-section a{
-    text-decoration: none;
-    color: white;
-}
-section a:hover{
-    text-decoration: underline;
-}
-
-section h2{
-    margin-left: 1vw;
-    margin-bottom: 1vh;
-    font-size: 20pt;
-}
-section h3{
-    font-size: 14pt;
-}
-
-#esporte{
-    background-color: rgba(0,255,0, 0.3);
-}
-#esporte h2{
-    color: green;
-}
-
-#esporte a{
+button{
     background-color: green;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(72, 185, 72);
 }
 
-#economia{
-    background-color: rgb(245, 245, 205);
-}
-#economia h2{
-    color:rgb(172, 147, 7);
-}
-#economia a{
-    background-color: rgb(172, 147, 7);
+#erro{
+    background-color: red;
+    margin:  16px 0;
+    display: none;
 }
 
-#tecnologia{
-    background-color: rgb(142, 142, 199);
+#correto{
+    background-color: rgb(13, 240, 13);
+    margin:  16px 0;
+    display: none;
 }
 
-#tecnologia h2{
-    color: rgb(14, 14, 190);
-}
-
-#tecnologia a{
-    background-color: blue;
-}
-
-#cinema{
-    background-color: rgb(230, 158, 158);
-}
-
-#cinema h2{
-    color: rgb(187, 14, 14);
-}
-
-#cinema a{
-    background-color: rgb(252, 16, 16);
+p{
+    font-size: 14pt;
 }
