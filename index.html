@@ -3,32 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Lista de tarefas</title>
 
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section>
-        <div class="main">
-            <div class="container">
-                <h1>Formulário</h1>
-            </div>
-            <div class="container">
-                <form id="formulario">
-                    <input type="number" placeholder="Número A" id="numeroA"/>
-                    <input type="number" placeholder="Número B" id="numeroB"/>
-                    <button type="submit">Confirmar</button>
-                </form>
-            </div>
-            <div class="container" id="erro">
-                <p>O número <b>B</b> não é maior que o número <b>A</b>!</p>
-            </div>
-            <div class="container" id="correto">
-                <p>O número <b>B</b> é maior que o número <b>A</b>!</p>
-            </div>
-            
-        </div>
-    </section>
+    <header>
+        <h1>Lista de tarefas</h1>
+        <button>Adicionar tarefa</button>
+    </header>
+    <div class="container" id="form-adicionar" style="display: none;"> 
+        <form>
+            <input type="text" required placeholder="Nova tarefa" id="new-task">
+            <button type="submit" id="adicionar">Adicionar</button>
+            <button id="cancelar" type="reset">Cancelar</button>
+        </form>
+    </div>
+    <div class="container">
+        <ol>
+            <h3>Minhas tarefas</h3>
+        </ol>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

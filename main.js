@@ -1,24 +1,37 @@
-let numA = document.querySelector("#numeroA");
-let numB = document.querySelector("#numeroB");
-let form = document.querySelector("#formulario");
+$(document).ready(function(){
+    $('header button').click(function(){
+        $('#form-adicionar').slideDown();
+    });
 
-function maiorQue(numeroB, numeroA){
-    return numeroB > numeroA
-}
+    $('#cancelar').click(function(){
+        $('#form-adicionar').slideUp();
+    });
 
-form.addEventListener('submit', function(e){
-    document.querySelector("#erro").style.display = "none";
-    document.querySelector("#correto").style.display = "none";
-    e.preventDefault();
-    let n1 = parseInt(numB.value)
-    let n2 = parseInt(numA.value)
-    if(maiorQue(n1 , n2)){
-        document.querySelector("#correto").style.display = "block";
-    }
-    else{
-        document.querySelector("#erro").style.display = "block";
-    }
-    numA.value = '';
-    numB.value = '';
+    $('#form-adicionar form').on('submit',function(e){
+        e.preventDefault();
+        const novaTarefa = $('#new-task');
+        const novoDiv = $('<div class="tarefas"></div>');
+        const novoItem = $('<li></li>');
+
+        const checkbox = $('<input type="checkbox">');
+        checkbox.appendTo(novoItem);
+        const label = $(`<label>${novaTarefa.val()}</label>`);
+        label.appendTo(novoItem);
+        $(novoItem).appendTo(novoDiv);
+
+        $(novoDiv).appendTo('ol');
+
+        checkbox.on('change', function(){
+            if(this.checked){
+                label.addClass('concluido');
+            }
+            else{
+                label.removeClass('concluido');
+            }
+        })
+
+    });
+
+    
 })
 
