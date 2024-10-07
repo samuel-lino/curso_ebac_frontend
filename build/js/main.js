@@ -1,0 +1,1 @@
+function ಠ_ಠ662(){console.log("oi")}
