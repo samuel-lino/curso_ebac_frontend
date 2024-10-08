@@ -23,7 +23,7 @@ function comprimirJs(){
 }
 
 function comprimirImg(){
-    return gulp.src('./source/images/*')
+    return gulp.src('./source/images/*')//consegui resolver o problema aqui usei uma versão anterior do gulp(versão 4.0.2)
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
             imagemin.mozjpeg({quality: 70, progressive: true}),
