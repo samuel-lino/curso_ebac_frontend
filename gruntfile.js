@@ -100,6 +100,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
+    grunt.registerTask('dev', ['less:development', 'replace:dev'])
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('build',['less:production', 'htmlmin', 'replace:dist', 'clean', 'uglify']);
 }
