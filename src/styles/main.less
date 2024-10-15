@@ -2,7 +2,7 @@
 @import "maps.less";
 @import "variaveis.less";
 
-@telaTablet: ~"(max-width: 1023px)";
+@telaTablet: ~"(max-width: 1023px) and (min-width: 768px)";
 @telacell: ~"(max-width: 767px)";
 
 body {
@@ -17,9 +17,6 @@ li {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    @media @telaTablet{
-        max-width: 80%;
-    }
 }
 
 header {
@@ -60,21 +57,11 @@ section {
         column-gap: 1%;
         row-gap: 4%;
         width: 100%;
-        @media @telacell{
-            display: block;
-        }
-        @media @telaTablet{
-            grid-template-columns: repeat(2, 48.5%);
-            column-gap: 3%;
-        }
 
         &-item{
             img{
                 width: 100%;
                 border-radius: 16px;
-            }
-            @media @telacell{
-                margin-bottom: 32px;
             }
         }
 
@@ -93,5 +80,30 @@ section {
                 background-color: @buttonHover;
             }
         }
+    }
+}
+
+@media @telacell{
+    section .product{
+        display: block;
+    }
+
+    section .product .product-item{
+        margin-bottom: 32px;
+    }
+
+    .container{
+        max-width: 80%;
+    }
+}
+@media @telaTablet{
+
+    section .product{
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+
+    .container{
+        max-width: 80%;
     }
 }
