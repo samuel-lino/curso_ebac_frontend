@@ -5,3 +5,5 @@ function multiplicar(num1: number, num2: number): number{
 function apresentar(nome: string): string{
     return `Olá ${nome}`
 }
+
+
