@@ -25,8 +25,8 @@ const Formulario = ()=>{
 
     return (
         <>
-        <input type="number" placeholder="primeiro numero" onChange={(evento)=>{setNum1(evento.target.value)}}/>
-        <input type="number" placeholder="segundo numero" onChange={(evento)=>{setNum2(evento.target.value)}}/>
+        <input type="number" placeholder="primeiro numero" onChange={(evento)=>{setNum1(parseInt(evento.target.value))}}/>
+        <input type="number" placeholder="segundo numero" onChange={(evento)=>{setNum2(parseInt(evento.target.value))}}/>
         {maiorQue()}
         </>
     )
